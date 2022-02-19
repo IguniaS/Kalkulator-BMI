@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator BMI</h1>
+        <nav>
+            <a href="#section1">Oblicz BMI</a>
+        </nav>
+        
+    </header>
+<main>
+    <section id="section1">
+            <h2>Oblicz BMI</h2>
+    </section>
+    <form>
+            <legend> Podaj płeć</legend>
+            <input type="radio" name="sex" id="k"> <label for="k">kobieta</label>
+            <input type="radio" name="sex" id="m"> <label for="m">mężczyzna</label>
+    </form>
+    <form oninput="result.value = weight.value / ((height.value * height.value) / 10000)">
+        <input type="number" name="weight" required pattern="[0-9]{3}$"> <label for="num1">Waga w kg</label><br>
+        <input type="number" name="height" required pattern="[0-9]{3}$"> <label for="num2">Wzrost w cm</label><br>
+        <label for="output">BMI     </label><output id="result"></output>
+    </form>
+    
+    </form>
+    <p>
+        <h3> Zakresy wartości BMI:
+        </h3>
+        <h4> mniej niż 16 - wygłodzenie<br>
+        16 - 16.99 - wychudzenie<br>
+        17 - 18.49 - niedowaga<br>
+        18.5 - 24.99 - wartość prawidłowa<br>
+        25 - 29.99 - nadwaga<br>
+        30 - 34.99 - I stopień otyłości<br>
+        35 - 39.99 - II stopień otyłości<br>
+        powyżej 40 - otyłość skrajna<br>
+    </h4>
+    </p>
+</main>
+    
+</body>
+</html>

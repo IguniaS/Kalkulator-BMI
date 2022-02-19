@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Roboto Serif, sans-serif;
+    background: url('../assets/img/bg_header.jpg') center/cover;
+}
+header {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(138, 130, 138);
+    font-size: 60px;
+    width: 200vh;
+    height: 300vh;
+    padding-top: 10px;
+}    
+header a {
+    height: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 10px;
+    align-content: center;
+}
+
+main {
+    height: 300px;
+    
+}
+h2 {
+    color: #ffff;
+    font-style: bold;
+}
+legend{
+    border: 1px solid pink;
+    font-style: bold;
+    width: 10%;
+}
+h3 {
+    height: 30px;
+    width: 20%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
